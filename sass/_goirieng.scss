@@ -1,0 +1,131 @@
+.goirieng{
+    width:100%;
+    margin-top:100px;
+    .top{
+        max-width:950px;
+        margin:auto;
+        text-align:center;
+        h2{
+            font-size: 60px;
+            font-weight: 900;
+            letter-spacing: 2;
+            line-height: 60px;
+        }
+        .image1{
+            width:100%;
+            height: 547px;
+        }
+        h3{
+            font-size: 36px;
+            line-height: 1.5;
+            text-align:center;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        p{
+            margin-top:10px;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 27px;
+            width:100%;
+            text-align:center;
+            
+        }
+    }
+    .caption3{
+        width:381px;
+        height:41px;
+        display:block;
+        margin:auto;
+        margin-top:80px;
+    }
+    .all{
+        margin-top:50px;
+        font-size: 25px;
+        font-weight: 500;
+        text-align:center;
+        text-decoration: underline;
+        color:#242052;
+    }
+    .center{
+
+        max-width:950px;
+        margin:auto;
+        margin-top:50px;
+        display:grid;
+        grid-template-columns: 317px 317px 317px;
+        grid-template-rows: 170px 250px;
+        li{
+            list-style: none;
+            display:grid;
+            grid-template-columns: 65px 1fr;
+            a{
+                display:inline;
+                text-decoration: none;
+                width:65px;
+                height:100%;
+                letter-spacing: 3px;
+                font-weight: 700;
+                font-size: 18px;
+                
+            }
+            span{
+                width:100%;
+                height:100%;
+                font-size: 27px;
+                font-weight: 300;
+                text-align:left;
+                padding-right:50px;
+            }
+        }
+    }
+    .products{
+        max-width:950px;
+        width:100%;
+        margin:auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .details{
+            width:100%;
+            @include display(flex-start, center);
+            flex-direction:column;
+            margin-bottom:50px;
+            &__img{
+                width:257px;
+                height: 258px;
+                text-align:center;
+                img{
+                    width:156px;
+                    height: 100%;
+                }
+            }
+            p{
+                font-size: 25px;
+                font-weight: 700;
+                font-style: italic;
+                margin-top:20px;
+            }
+            & > span{
+                margin-top:10px;
+                font-size: 18px;
+                text-align:center;
+            }
+            .btn_gt{
+                margin-top:20px;
+                width:134px;
+                height:37px;
+                background:transparent;
+                @include display(space-evenly, center);
+                font-size: 17px;
+                border:1px solid #242052;
+                outline:none;
+                font-weight: 600;
+                color:#242052;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

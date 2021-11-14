@@ -1,0 +1,55 @@
+.footer{
+    max-width: 950px;
+    margin:auto;
+    margin-top:100px;
+    @include display(center,flex-start);
+    flex-direction: column;
+    margin-bottom:100px;
+    p{
+        width:100%;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 900;
+        text-align:center;
+    }
+    span{
+        font-size: 13.5px;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 5px;
+    }
+    &_nav{
+        @include display(center,center);
+        list-style: none;
+        width:100%;
+        height:25px;
+
+        li{
+            width:auto;
+            height:70%;
+            border-right:1px solid #242052;
+            padding:0px 5px;
+            @include display(center,center);
+            a{
+                text-decoration: none;
+                font-size: 12.5px;
+                letter-spacing: -1.2px;
+                font-weight: 450;
+                
+            }
+            &:last-child{
+                border:none;
+            }
+        }
+    }
+    .social__icon{
+        width:100%;
+        margin-top:10px;
+        @include display(center,center);
+        i{
+            margin:0px 10px;
+            font-size: 20px;
+        }
+    }
+}
