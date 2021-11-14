@@ -119,6 +119,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   transition: 0.3s linear;
+  color: #242053;
 }
 .header__menu .navbar li a:hover {
   font-weight: 600;
